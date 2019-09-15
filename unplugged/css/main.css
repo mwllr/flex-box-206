@@ -95,9 +95,151 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Author's custom styles ************************************************
    ========================================================================== */
 
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* -------------------- Base p h Styles -------------------- */
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	font-weight: 700;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+/* -------------------- Header Styles -------------------- */
+.header {
+
+}
+
+.header-divider {
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+/* -------------------- Footer Styles -------------------- */
+.footer-content {
+
+}
+.contact {
+
+}
+
+.social {
+
+}
+.social-icons {
+
+}
+
+.copyright {
+
+}
+
+/* -------------------- Hero Styles -------------------- */
+.hero-area {
+
+}
+
+/* -------------------- Form Styles -------------------- */
+.form-description {
+
+}
+.form {
+
+}
+
+/* -------------------- Features Styles -------------------- */
+.features{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features-items {
+
+}
+
+.features-item-description {
+
+}
+
+.fontawesome-icon {
+
+}
+
+/* -------------------- Reviews Styles -------------------- */
+
+
+/* -------------------- Mission Styles -------------------- */
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission-content {
+
+}
+/* -------------------- MAP Styles -------------------- */
+.map {
+
+}
+
+/* -------------------- contact-section Styles -------------------- */
+.contact-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* -------------------- FAQ Styles -------------------- */
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq-content {
+
+}
+
+.question {
+
+}
+.answer {
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -263,4 +405,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
