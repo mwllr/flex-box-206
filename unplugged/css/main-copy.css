@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -102,24 +102,18 @@ textarea {
 /* -------------------- Base Header - Footer Styles -------------------- */
 header,
 footer {
-  background-color:#fff2e6;
+  background-color:#202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
 .content-wrapper {
-  border: 1px black dotted;
-}
-
-p {
-padding: 0;
-margin:0;
+  border: 0 black dotted;
 }
 
 header {
-  padding: 15px 0;
+  padding: 15px 0 0 0;
 }
 
 header .content-wrapper {
@@ -128,51 +122,68 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   width:100%;
-  margin: 0;
   text-align: center;
 }
 
 .header-divider {
   width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-  border-top: 1px solid white;
-}
-
-header img {
-  width:60%;
-  padding: 0 0 20px 0;
-}
-
-header nav {
+  border-top: .5px solid white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  padding: 20px 0;
+}
+
+header img {
+  width: 80%;
+  padding: 0 0 20px 0;
+}
+
+header nav {
   width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav ul {
+width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
-}
-
-footer {
-  flex-direction: column;
-}
-
-footer p {
+  list-style: none;
+  padding: 0;
   margin: 0;
+  text-align:center;
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+header nav ul li a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+header nav a:link, a:visited {
+  color: white;
 }
 
 footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   width: 55%;
   margin: 50px 0;
-}
-
-footer .contact {
-  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -187,116 +198,96 @@ footer .social-icons p {
   align-items: center;
 }
 
-footer .copyright {
-  margin: 20px 0;
-}
-
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
-
 .hero-area {
+  background-color: #202322;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("../img/jake-melara-30679-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   height: 500px;
-  background-color:#e6e6ff;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-/* Aside */
-
-aside {
-  background-color:#e6fffa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.features .content-wrapper, .hero-area .content-wrapper {
+  padding: 20px;
 }
 
+.features h2, .hero-area h2 {
+  color: white;
+  margin: 0;
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight:normal;
+}
 
-/* Features */
+/* Features Area */
 .features {
-  background-color:#ffe6f9;
+  background-color: #202322;
+  background-image: url("../img/rawpixel-800820-unsplash1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-}
-
-.features .content-wrapper {
-  width: 90%;
 }
 
 .features .features-items {
-  text-align: center;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align:center;
 }
 
-.features .features-items p {
-width: 50%;
+.features-item-description {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
 }
 
-article .features {
-  width:55%;
-}
 
-/* Reviews */
-
-.reviews {
-  background-color:#e6ffff;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-.reviews .content-wrapper {
-  width: 90%;
-}
-
-.reviews h3 {
-
-}
-
-/* ==========================================================================
-   About Page
-   ========================================================================== */
-
-.mission {
+/* Form Area */
+aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  padding:20px 0 50px 0;
 }
 
-.contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+aside .content-wrapper {
+width:90%;
 }
 
+aside .content-wrapper h3 {
+  margin:0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight:normal;}
 
-/* ==========================================================================
-   FAQ Page
-   ========================================================================== */
-
-.faq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+aside .content-wrapper p {
+  margin:.5em 0 1em 0;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  font-weight:normal;
 }
 
-.faq .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.form .button {
+background-color: #2a423a;
 }
-
 
 /* ==========================================================================
    Helper classes
